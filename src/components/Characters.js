@@ -5,8 +5,8 @@ import Character from './Character';
 function Characters({ characters }) {
   const characterList = characters.map(character => {
     return (
-      <li key={character.id} style={{ 
-        'list-style-type': 'none',
+      <li key={character._id} style={{ 
+        'listStyleType': 'none',
         'width': '25vw',
         'margin': '5px'
       }}>
@@ -18,7 +18,7 @@ function Characters({ characters }) {
   return (
     <ul style={{ 
       'display': 'flex',
-      'flex-wrap' : 'wrap'
+      'flexWrap' : 'wrap'
     }}>
       {characterList}
     </ul>
@@ -30,7 +30,7 @@ Characters.propTypes = {
   characters: PropTypes.arrayOf(PropTypes.shape({
     name: PropTypes.string.isRequired,
     photoUrl: PropTypes.string.isRequired,
-    id: PropTypes.string.isRequired
+    _id: PropTypes.string.isRequired
   }))
 };
 
