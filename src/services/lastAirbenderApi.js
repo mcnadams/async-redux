@@ -9,3 +9,13 @@ export default function getCharacters() {
       photoUrl: character.photoUrl || defaultImage
     })));
 }
+
+export function getCharacter(id) {
+  return fetch(`https://last-airbender-api.herokuapp.com/api/v1/characters/${id}`)
+    .then(res => res.json())
+    .then(character => ({
+      _id: character._id,
+      name: character.name,
+      photoUrl: character.photoUrl || defaultImage
+    }));
+}
