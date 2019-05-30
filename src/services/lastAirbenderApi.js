@@ -16,6 +16,13 @@ export function getCharacter(id) {
     .then(character => ({
       _id: character._id,
       name: character.name,
-      photoUrl: character.photoUrl || defaultImage
+      photoUrl: character.photoUrl || defaultImage,
+      allies: character.allies || [],
+      enemies: character.enemies || [],
+      gender: character.gender || '',
+      hair: character.hair || '',
+      position: character.position || '',
+      affiliation: character.affiliation || '',
+      first: character.first || '',
     }));
 }

@@ -1,8 +1,13 @@
-import { FETCH_CHARACTERS, FETCH_CHARACTERS_LOADING, FETCH_CHARACTERS_ERROR } from '../actions/characterActions';
+import { 
+  FETCH_CHARACTERS, 
+  FETCH_CHARACTERS_LOADING, 
+  FETCH_CHARACTERS_ERROR 
+} from '../actions/characterActions';
 
 const initialState = {
   loading: false,
-  characters: []
+  characters: [],
+  error: null
 };
 
 export default function reducer(state = initialState, action) {

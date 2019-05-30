@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { getCharacter, getCharacterLoading, getCharacterError } from '../selectors/characterSelectors';
-import CharacterInfo from '../components/Characters';
+import CharacterInfo from '../components/CharacterInfo';
 import { fetchCharacter } from '../actions/characterActions';
 
 class CharacterDetail extends PureComponent {
@@ -11,7 +11,14 @@ class CharacterDetail extends PureComponent {
     character: PropTypes.shape({
       name: PropTypes.string.isRequired,
       photoUrl: PropTypes.string.isRequired,
-      _id: PropTypes.string.isRequired
+      _id: PropTypes.string.isRequired,
+      allies: PropTypes.array.isRequired,
+      enemies: PropTypes.array.isRequired,
+      gender: PropTypes.string.isRequired,
+      hair: PropTypes.string.isRequired,
+      position: PropTypes.string.isRequired,
+      affiliation: PropTypes.string.isRequired,
+      first: PropTypes.string.isRequired,
     }),
     loading: PropTypes.bool.isRequired,
     fetchCharacter: PropTypes.func.isRequired
