@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function Character({ character }) {
   return (
     <div>
-      <img src={character.photoUrl} />
+      <img src={character.photoUrl} style={{ 'width': '100%' }}/>
       <p>{character.name}</p>
     </div>
   );

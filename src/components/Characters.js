@@ -5,14 +5,21 @@ import Character from './Character';
 function Characters({ characters }) {
   const characterList = characters.map(character => {
     return (
-      <li key={character.id}>
+      <li key={character.id} style={{ 
+        'list-style-type': 'none',
+        'width': '25vw',
+        'margin': '5px'
+      }}>
         <Character character={character} />
       </li>
     );
   });
 
   return (
-    <ul>
+    <ul style={{ 
+      'display': 'flex',
+      'flex-wrap' : 'wrap'
+    }}>
       {characterList}
     </ul>
   );
