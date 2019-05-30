@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Character component renders Character 1`] = `
+<div>
+  <img
+    src="./path/to/image"
+    style={
+      Object {
+        "width": "100%",
+      }
+    }
+  />
+  <p>
+    Bonnie
+  </p>
+</div>
+`;
