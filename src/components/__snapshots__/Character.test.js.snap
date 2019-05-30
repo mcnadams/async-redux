@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Character component renders Character 1`] = `
-<div>
+<Link
+  to="/undefined"
+>
   <img
     src="./path/to/image"
     style={
@@ -13,5 +15,5 @@ exports[`Character component renders Character 1`] = `
   <p>
     Bonnie
   </p>
-</div>
+</Link>
 `;

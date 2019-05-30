@@ -5,15 +5,14 @@ exports[`Characters component renders Characters 1`] = `
   style={
     Object {
       "display": "flex",
-      "flex-wrap": "wrap",
+      "flexWrap": "wrap",
     }
   }
 >
   <li
-    key="2"
     style={
       Object {
-        "list-style-type": "none",
+        "listStyleType": "none",
         "margin": "5px",
         "width": "25vw",
       }
