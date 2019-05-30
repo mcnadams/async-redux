@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Characters component renders Characters 1`] = `
+<ul
+  style={
+    Object {
+      "display": "flex",
+      "flex-wrap": "wrap",
+    }
+  }
+>
+  <li
+    key="2"
+    style={
+      Object {
+        "list-style-type": "none",
+        "margin": "5px",
+        "width": "25vw",
+      }
+    }
+  >
+    <Character
+      character={
+        Object {
+          "id": "2",
+          "name": "Bonnie",
+          "photoUrl": "./path/to/image",
+        }
+      }
+    />
+  </li>
+</ul>
+`;
