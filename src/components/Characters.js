@@ -26,3 +26,5 @@ Characters.propTypes = {
     id: PropTypes.string.isRequired
   }))
 };
+
+export default Characters; 
